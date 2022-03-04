@@ -1,0 +1,15 @@
+body {
+    font-family: Verdana, sans-serif;
+    color: whitesmoke;
+    background-color:rgb(64,64,64)
+  }
+/* Background Video */
+/* video {
+    position: fixed;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    filter:opacity(60%);
+    transform: translateX(10%) translateY(40%);}
+} */

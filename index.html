@@ -3,30 +3,49 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Basic webpage for learning html and hosting files for my linktree (CV (pdf), maybe papers in the future, videos, etc.)</title>
+  <title>Chris' Online Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='./style.css' rel='stylesheet'>
 </head>
 
-<style>
-body {
-  font-family: Verdana, sans-serif;
-}
-</style>
-</head>
+<!-- Background Video
+<video autoplay muted loop id="myVideo">
+  <source src="./background-video.mp4" type="video/mp4">
+</video> -->
 
+<!-- Main Page -->
+
+<!-- Links -->
 <body>
-<h1>Welcome to the <del>best</del> <del>worst</del> most underwhelming website you've seen yet!</h1>
-<p>(I swear I'm gonna do something with this eventually.) </p>
-
-<a href="/cv/cv.pdf" type="application/pdf">This is the CV button<br></a>
-<a href="https://linktr.ee/crfield">This is the linktree button<br></a>
-
+  <h2>Welcome to the most underwhelming website you've seen yet!</h2>
+  <p>(I swear I'm gonna do something with this eventually.) </p>
+  <a href="/assets/cv/cv.pdf" type="application/pdf">CV<br></a>
+  <a href="https://linktr.ee/crfield" aria-label="Linktree">Linktree<br></a>
+  <a href="https://www.youtube.com/channel/UC9NUVGNWHGDeHa56Lt6h0pg" aria-label="YouTube">YouTube<br></a>
+  <a href="https://www.linkedin.com/in/christopher-r-field/" aria-label="LinkedIn">LinkedIn<br></a>
+  <a href="https://twitter.com/crfield18" aria-label="Twitter">Twitter<br></a>
+  <br>
 </body>
 
-<iframe width="480" height="270"
-  src="https://www.youtube.com/embed/Ogc3mHjZSBg?autoplay=1&mute=1&controls=0&loop=1"
-  title="YouTube video player"
-  frameborder=""
-  allow=" autoplay; clipboard-write; encrypted-media;"></iframe>
-  
+<!-- Youtube videos (autoplay atm) -->
+<iframe
+  width="384" height="216"
+  src="https://www.youtube-nocookie.com/embed/videoseries?list=PLQMQ-WUKVUk63svDzpdYt8MXdJGbzf379&autoplay=1&mute=1&controls=0&showinfo=0&loop=1​" 
+  title="Memes Playlist"
+  frameborder="0"
+  allow=" autoplay; clipboard-write; encrypted-media; " >
+</iframe>
+
+<iframe
+  width="384" height="216"
+  src="https://www.youtube-nocookie.com/embed/videoseries?list=PLQMQ-WUKVUk4YgFcoTi4qfCWbi9_jJZ-N&autoplay=1&mute=1&controls=0&showinfo=0&loop=1"
+  title="Games playlist"
+  frameborder="0"
+  allow=" autoplay; clipboard-write; encrypted-media; " >
+</iframe>
+
+<!-- <video autoplay muted loop id="myVideo" width="384" height="216">
+  <source src="./background-video.mp4" type="video/mp4">
+</video>  -->
+
 </html>
