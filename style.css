@@ -1,7 +1,13 @@
-body {
-    font-family: Verdana, sans-serif;
-    background-color:rgb(64,64,64);
-  }
+/* Global */
+* {
+  font-family: Verdana, sans-serif;
+  background-color:rgb(64,64,64);
+}
+
+/* Title Class */
+.title {
+
+}
 
 /* Heading 2 */
 h2 {
@@ -9,15 +15,26 @@ h2 {
   font-size: 32px;
 }
 
+/* Heading 5 */
+h5 {
+  color: grey;
+  font-size: 10px;
+}
+
+/* Body */
+body {
+
+}
+
 /* Hyperinks */
 a {
   color: whitesmoke;
+  font-size: 25px;
 }
 
 /* Paragraphs */
 p {
-  color: grey;
-  font-size: 10px;
+
 }
 
 /* Background Video */
