@@ -4,10 +4,19 @@
   background-color:rgb(64,64,64);
 }
 
-/* Title Class */
-.title {
-
+.content {
+  position: fixed;
+  top: 0;
+  background: rgb(64,64,64);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
+
+/* Title Class */
+/* .title {
+
+} */
 
 /* Heading 2 */
 h2 {
@@ -22,9 +31,9 @@ h5 {
 }
 
 /* Body */
-body {
+/* body {
 
-}
+} */
 
 /* Hyperinks */
 a {
@@ -33,17 +42,19 @@ a {
 }
 
 /* Paragraphs */
-p {
+/* p {
 
-}
+} */
 
 /* Background Video */
-/* video {
+video {
     position: fixed;
+    left: 0;
+    top: 0;
     min-width: 100%; 
     min-height: 100%;
-    width: auto;
-    height: auto;
     filter:opacity(60%);
-    transform: translateX(10%) translateY(40%);}
-} */
+    transform: translateX(10%) translateY(40%);
+  }
+
+
