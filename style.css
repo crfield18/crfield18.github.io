@@ -57,4 +57,11 @@ video {
     transform: translateX(10%) translateY(40%);
   }
 
+/* Text Input */
+input, select, textarea{
+    color: whitesmoke;
+}
 
+button{
+  color: whitesmoke;
+}
