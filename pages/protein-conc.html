@@ -17,14 +17,14 @@
 
   <form>
     <label>
-      Absorbance (A<sub>280</sub>)
-      <input type="number" id="A280" minlength="3" maxlength="6" required step=".0001">
+      Dilution factor
+      <input type="number" id="DilutionFactor" minlength="1" maxlength="10" required step=".01">
     </label>
     <br><br>
 
     <label>
-      Dilution factor
-      <input type="number" id="DilutionFactor" minlength="1" maxlength="10" required step=".01">
+      Absorbance (A<sub>280</sub>)
+      <input type="number" id="A280" minlength="3" maxlength="6" required step=".0001">
     </label>
     <br><br>
 
@@ -35,20 +35,21 @@
     <br><br>
 
     <label>
-      Protein mass (mw)
-      <input type="number" id="MW" minlength="1" maxlength="12" required step=".01">
-    </label>
-    <br><br>
-
-    <label>
       Path Length (cm)
       <input type="number" id="PathLength" minlength="1" maxlength="10" required step=".001">
     </label>
     <br><br>
 
+    <label>
+      Protein mass (mw)
+      <input type="number" id="MW" minlength="1" maxlength="12" required step=".01">
+    </label>
+    <br><br>
+
     <button id="calculateButton" type="button">Calculate</button>
+    <br>
     <p id="result"></p>
-    <script src="/scripts/protein_conc.js"></script>
+    <script src="/scripts/protein_conc.js">"use strict"</script>
 
 </form>
 
