@@ -13,6 +13,30 @@
   padding: 20px;
 }
 
+.input {
+  margin-left: 25%;
+  margin-right: 25%;
+  position: relative;
+  text-align: center;
+  background: rgb(64,64,64);
+  color: #f1f1f1;
+  padding: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
 /* Title Class */
 /* .title {
 
