@@ -31,8 +31,8 @@ function calculateSum() {
         const MicroMolar = (num1 * num2) * 1000000 / (num3 * num4);
         const mgml = (MicroMolar / 1000000) * num5;
 
-        const RoundedMicroMolar = MicroMolar.toFixed(4);
-        const Roundedmgml = mgml.toFixed(4);
+        const RoundedMicroMolar = MicroMolar.toFixed(2);
+        const Roundedmgml = mgml.toFixed(2);
 
         resultParagraph.textContent = `Estimated protein concentration:\
         ${RoundedMicroMolar} µM or ${Roundedmgml} mg/ml`;
