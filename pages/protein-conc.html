@@ -14,43 +14,48 @@
 <div class="content">
   <a href="/index.html" aria-label="Home">Home</a>
   <br><br>
-
+  <div class="input">
   <form>
     <label>
       Dilution factor
+      <br>
       <input type="number" id="DilutionFactor" minlength="1" maxlength="10" required step=".01">
     </label>
     <br><br>
 
     <label>
-      Absorbance (A<sub>280</sub>)
+      Absorbance
+      <br>
       <input type="number" id="A280" minlength="3" maxlength="6" required step=".0001">
     </label>
     <br><br>
 
     <label>
-      Molar Extinction Coefficient (&epsilon;<sub>280</sub>)
+      Molar Extinction Coefficient (&epsilon;)
+      <br>
       <input type="number" id="Extinction" minlength="1" maxlength="10" required step=".001">
     </label>
     <br><br>
 
     <label>
       Path Length (cm)
+      <br>
       <input type="number" id="PathLength" minlength="1" maxlength="10" required step=".001">
     </label>
     <br><br>
 
     <label>
       Protein mass (mw)
+      <br>
       <input type="number" id="MW" minlength="1" maxlength="12" required step=".01">
     </label>
     <br><br>
-
-    <button id="calculateButton" type="button">Calculate</button>
+    <button id="calculateButton" type="button" class="button">Calculate</button>
+  </div>
     <br>
     <p id="result"></p>
     <script src="/scripts/protein_conc.js">"use strict"</script>
-
+</div>
 </form>
 
 </body>
