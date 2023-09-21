@@ -19,35 +19,35 @@
     <label>
       Dilution factor
       <br>
-      <input type="number" class="input" id="DilutionFactor" minlength="1" maxlength="10" required step=".01">
+      <input type="number" class="input" id="DilutionFactor" minlength="1" maxlength="10" step=".01" value="1" required>
     </label>
     <br><br>
 
     <label>
       Absorbance
       <br>
-      <input type="number" class="input" id="A280" minlength="3" maxlength="6" required step=".0001">
+      <input type="number" class="input" id="Abs" minlength="3" maxlength="6" step=".0001" value="0" required>
     </label>
     <br><br>
 
     <label>
       Molar Extinction Coefficient (&epsilon;)
       <br>
-      <input type="number" class="input" id="Extinction" minlength="1" maxlength="10" required step=".001">
+      <input type="number"class="input" id="Extinction" minlength="1" maxlength="10" step=".001" value="0" required>
     </label>
     <br><br>
 
     <label>
       Path Length (cm)
       <br>
-      <input type="number" class="input" id="PathLength" minlength="1" maxlength="10" required step=".001">
+      <input type="number" class="input" id="PathLength" minlength="1" maxlength="10" step=".001" value="1" required>
     </label>
     <br><br>
 
     <label>
       Protein mass (mw)
       <br>
-      <input type="number" class="input" id="MW" minlength="1" maxlength="12" required step=".01">
+      <input type="number" class="input" id="MW" minlength="1" maxlength="12" step=".01" value="0">
     </label>
     <br><br>
     <button id="calculateButton" type="button" class="button">Calculate</button>
