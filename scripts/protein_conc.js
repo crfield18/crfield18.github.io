@@ -9,21 +9,33 @@ const PathLengthInput = document.getElementById("PathLength");
 const calculateButton = document.getElementById("calculateButton");
 const resultParagraph = document.getElementById("result");
 
-// Function to perform the calculation
+// Convert website inputs (strings) to a number
+function convertToNum(input) {
+    if (input.endsWith(".")) {
+        input += "0";
+    }
+    try {
+        return new Big(input);
+    } catch (error) {
+        return input;
+    }
+}
+
+// Calculate protein concentration using Beer-Lambert Law
 function calculateSum() {
     // Absorbance of the sample at a specific wavelength
     // (typically 280 nm for estimating protein concentration
-    const num1 = new Big(AbsInput.value);
+    const num1 = convertToNum(AbsInput.value);
     // Dilution factor
     // By how much was the sample diluted to allow for accurate readings
-    const num2 = new Big(DilutionFactorInput.value);
+    const num2 = convertToNum(DilutionFactorInput.value);
     // Molar extinction coefficient (ε) (M^-1 cm^-1)
-    const num3 = new Big(ExtinctionInput.value);
+    const num3 = convertToNum(ExtinctionInput.value);
     // Path length (cm)
     // Generally 1 cm or path length corrected to 1 cm
-    const num4 = new Big(PathLengthInput.value);
+    const num4 = convertToNum(PathLengthInput.value);
     // Molecular weight of the protein
-    const num5 = new Big(MWInput.value);
+    const num5 = convertToNum(MWInput.value);
 
     // Estimated protein concentration in micromolar (µm)
     const MicroMolar = (num1 * num2) * 1000000 / (num3 * num4);
@@ -49,7 +61,6 @@ function calculateSum() {
             console.log(`conc in mg/ml: ${mgml}`);
         return;
     }
-
 }
 
 // Add click event listener to the button
