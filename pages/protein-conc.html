@@ -6,6 +6,7 @@
   <title>Estimate Protein Concentration</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='/style.css' rel='stylesheet'>
+  <link rel="icon" type="assets/images/" href="/images/favicon.ico">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/big.js/5.2.2/big.min.js"></script>
 </head>
 
@@ -19,35 +20,35 @@
     <label>
       Dilution factor
       <br>
-      <input type="number" class="input" id="DilutionFactor" minlength="1" maxlength="10" step=".01" value="1" required>
+      <input type="number" class="input" id="DilutionFactor" minlength="1" maxlength="10" step=".01" value="1" pattern="[0-9]*" inputmode="numeric" required>
     </label>
     <br><br>
 
     <label>
       Absorbance
       <br>
-      <input type="number" class="input" id="Abs" minlength="3" maxlength="6" step=".0001" value="0" required>
+      <input type="number" class="input" id="Abs" minlength="3" maxlength="6" step=".0001" value="0" pattern="[0-9]*" inputmode="numeric" required>
     </label>
     <br><br>
 
     <label>
       Molar Extinction Coefficient (&epsilon;)
       <br>
-      <input type="number"class="input" id="Extinction" minlength="1" maxlength="10" step=".001" value="0" required>
+      <input type="number"class="input" id="Extinction" minlength="1" maxlength="10" step=".001" value="0" pattern="[0-9]*" inputmode="numeric" required>
     </label>
     <br><br>
 
     <label>
       Path Length (cm)
       <br>
-      <input type="number" class="input" id="PathLength" minlength="1" maxlength="10" step=".001" value="1" required>
+      <input type="number" class="input" id="PathLength" minlength="1" maxlength="10" step=".001" value="1" pattern="[0-9]*" inputmode="numeric" required>
     </label>
     <br><br>
 
     <label>
       Protein mass (mw)
       <br>
-      <input type="number" class="input" id="MW" minlength="1" maxlength="12" step=".01" value="0">
+      <input type="number" class="input" id="MW" minlength="1" maxlength="12" step=".01" value="0" pattern="[0-9]*" inputmode="numeric">
     </label>
     <br><br>
     <button id="calculateButton" type="button" class="button">Calculate</button>
